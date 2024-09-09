@@ -67,11 +67,16 @@ To generate the plot:
 
 The output comes in three formats. The first is the 'master-messages.csv' file, which contains all scraped messages from all channels:
 
-![Example CSV](https://github.com/tgsn-co/tg-analysis/blob/readme-images/Screenshot%202024-09-02%20at%2014.27.25.png)
+| channel_username | id | date | message | url | forwarded_from | views | forwards | replies |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `channel_google` | `id_number` | `yyyy-mm-dd hh:mm:ss UTC` | `hello_world` | `https://google.com` | `Google` | `1001` | `101` | 11` |
 
 The second is another CSV file called 'analysis-results.csv', which contains a list of all channels that have had content forwarded by the target channel(s):
 
-![Example CSV](https://github.com/tgsn-co/tg-analysis/blob/readme-images/Screenshot%202024-09-02%20at%2016.13.35.png)
+| target | total_shares | subscribers | scraped_channel_1 | scraped_channel_2 |
+| --- | --- | --- | --- | --- |
+| `channel_apple` | `100` | `1002` | `75.00% (75 messages)` | `25.00% (25 messages)` |
+| `channel_microsoft` | `50` | `1001` | `50.00% (25 messages)` | `50.00% (25 messages)` |
 
 The third is a text output that's saved as a text file that includes basic statistics of the process, such as:
 ```
@@ -90,9 +95,7 @@ Social network analysis completed successfully!
 
 ## Visual Output
 
-An example of the expected plot is as follows:
-
-![Example Plot](https://github.com/tgsn-co/tg-analysis/blob/readme-images/rim-impersky.png)
+An Plotly line graph is also generated. You can edit this either directly on the ```main.py``` file or add it to the ```[Plotly]``` section of the configuration file. Further details on the documentation for Plotly graph are available in the link further up
 
 ## Telegram Specifics
 
