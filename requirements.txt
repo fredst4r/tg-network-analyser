@@ -1,0 +1,11 @@
+telethon
+pandas
+tqdm
+asyncio
+nest_asyncio
+requests
+configparser
+plotly
+aiohttp
+pip-system-certs
+kaleido
