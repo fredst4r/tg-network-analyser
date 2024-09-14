@@ -1,6 +1,6 @@
 # Telegram Network Analysis
 
-This script analyzes message data from a target channel(s), outputs a list of channels that have content forwarded by the target channel(s) and plots the number of messages by channel by month
+This script analyzes message data from a target channel(s), outputs a list of channels that have content forwarded by the target channel(s) and plots the number of messages by channel by month. Credit to LonamiWeb for building the Telethon library that this script relies on: https://docs.telethon.dev/en/stable/#
 
 ## Prerequisites
 
