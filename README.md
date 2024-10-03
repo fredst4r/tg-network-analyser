@@ -20,7 +20,7 @@ This script analyzes message data from a target channel(s), outputs a list of ch
 Clone the repository or download the script:
 
 ```
-    git clone https://github.com/fr3dst4r/telegram-network-analysis.git
+    git clone https://github.com/fredst4r/tg-network-analyser.git
 ```
     
 Install the required Python packages from the requirements.txt file using pip:
